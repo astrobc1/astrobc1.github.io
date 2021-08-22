@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bryson Cale - My Personal Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		
+		</div>
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#research" class="icon solid fas fa-star"><span>Research</span></a>
+						<a href="#hobbies" class="fab fa-python"><span>Hobbies</span></a>
+						<a href="#contact" class="icon solid fas fa-at"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Bryson Cale</h1>
+									<p>NASA Postdoctoral Fellow</p>
+									<p>&nbsp; @ JPL / IPAC</p>
+								</header>
+								<a href="#research" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Research -->
+							<article id="research" class="panel">
+								<header>
+									<h2>Research</h2>
+								</header>
+								<p>
+									I primarily search for <a href="https://en.wikipedia.org/wiki/Exoplanet">exoplanets</a> with the radial-velocity (RV) technique. Planets do not orbit a stationary star, but rather the entire system orbits around its center of mass. Changes in the star's apparent velocity along our line of sight can be measured via <a href=https://en.wikipedia.org/wiki/Doppler_spectroscopy>Doppler Spectroscopy</a>.Significant periods in these changes correspond to the effective year for the candidate perturber, and the relative amplitude of the velocity change will can be used to measure the mass of the object. Searching for planets around <a href="https://en.wikipedia.org/wiki/Red_dwarf">K and M dwarfs</a> in particular provides a potential shortcut to finding habitable zone worlds.
+								</p>
+								<p>
+									I utilize a variety of spectrographs, including <a href="https://sites.astro.caltech.edu/palomar/observer/newsletter/palomarobserver2.html#parvi">PARVI</a>, <a href="http://irtfweb.ifa.hawaii.edu/~ishell/">iSHELL</a>, <a href="http://www.ctio.noao.edu/noao/node/847">CHIRON</a>, <a href="https://www.cfa.harvard.edu/minerva/">MINERVA</a>, and <a href="https://minerva-australis.org/">MINERVA-Australis</a>. I develop the codes to delicately compute the radial velocities from the raw spectral data these facilities provide.
+								</p>
+
+								<p>
+									I am also interested in general-purpose mathematical optimization packages - particularly those based on Bayesian inference.
+								</p>
+
+								<p>
+									Codes I've developed:
+								</p>
+
+								<p>
+									<a href="https://pychell.readthedocs.io/en/dev-bryson/index.html"><img src="images/pychell_logo.png" width=20%></a>
+								</p>
+
+								<p>
+									1. Pychell is a package to reduce and extract high resolution echelle spectra, generate precise radial velocities, and fit orbital models to the those RVs. Pychell makes use of the optimize package below.
+								</p>
+
+								<p>
+									<img src="images/spec.png" alt="" width=100% />
+								</p>
+								
+						        <p>
+									2. Optimize is a suite for generic Bayesian inference and optimization routines. Included is an iterative Nelder Mead algorithm with support for bounded parameters, and is demonstrated to be robust in high dimensional parameter spaces so long as enough of the initial guesses are reasonably accurate. (frequently tested in ~ 50 dimensions).
+								</p>
+								
+							    <p>
+									<a href="https://optimize.readthedocs.io/en/latest/index.html"><img src="images/opt.png" width=20%></a>
+								</p>
+
+							</article>
+
+						<!-- Hobbies -->
+							<article id="hobbies" class="panel">
+								<header>
+									<h2>Hobbies</h2>
+								</header>
+								<h4>1. Tennis</h4>
+								<img src="images/tennis.png" height=30% width=30% alt="" />
+								<h4>2. Programming!</h4>
+								<p>
+									For work and for fun, I primarily program in either <a href="https://www.python.org/">Python</a> or <a href="https://julialang.org">Julia</a>. I enjoy exploring and visualizing fractal geometry in the complex plane and other intersting mathematical entities. I also enjoy exploring programming languages in general and will occasionally code in a variety of random modern languages from Rust to Crystal to Go.
+								</p>
+								<img src="images/juliaset.png" height="auto" width=80% alt="" />
+								<h4>3. Cook endless amounts of Italian food</h4>
+							</article>
+
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Information</h2>
+								</header>
+								<h3>CV</h3>
+								<a href="docs/resume.pdf">Resume</a>
+								<h3>GitHub</h3>
+								<a href="https://github.com/astrobc1">astrobc1</a>
+								<h3>Email</h3>
+								<p>bryson.cale1@gmail.com</p>
+							</article>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
