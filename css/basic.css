@@ -2,6 +2,10 @@
     Header and Nav
 ================================================================== */
 
+* {
+  font-family: "juliamono"
+}
+
 nav {
   width: 64%;
   display: inline-block;

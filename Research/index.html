@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>Research and Codes</title>  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Research/">Research and Codes</a></li>
+        <li><a href="/FindMe/">Find Me</a></li>
+      </ul>
+    </nav>
+</header>
+    
+
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="research"><a href="#research" class="header-anchor">Research</a></h1>
+<h3 id="precision_radial_velocities"><a href="#precision_radial_velocities" class="header-anchor">Precision Radial Velocities</a></h3>
+<p>I primarily search for exoplanets with the radial velocity &#40;RV&#41; technique. Planets do not orbit a stationary star, but rather the entire system orbits around the center of mass. In our own Solar System, the Sun undergoes as maximum velocity of change ~20 m/s, primarily due to the orbit of Jupiter, the most massive planet in our Solar System. Such changes in a star&#39;s apparent velocity along our line of sight can be measured via <a href="https://en.wikipedia.org/wiki/Doppler_spectroscopy">Doppler spectroscopy</a>. Significant periods in these changes correspond to the effective year for the candidate perturber, and the relative amplitude of the maximum velocity change can be used to measure the mass of the perturbing object, which may be a planet. Searching for planets around K and M dwarfs in particular provides a potential shortcut to finding habitable zone worlds. I develop a set of Julia and Python codes to generate and model the Doppler velocities from a variety of facilities, including iSHELL/IRTF, PARVI/HALE, ESO/ESPRESSO, ESO/HARPS, MINERVA, and NIRSPEC/Keck.</p>
+<h3 id="julia_codes_ive_developed_for_research"><a href="#julia_codes_ive_developed_for_research" class="header-anchor">Julia Codes I&#39;ve developed for Research:</a></h3>
+<h4 id="iterativeneldermeadjl"><a href="#iterativeneldermeadjl" class="header-anchor">IterativeNelderMead.jl</a></h4>
+<p>An Nelder-Mead solver written in Julia. The solver is robust in high-dimensional parameter spaces.</p>
+<p><a href="https://github.com/astrobc1/IterativeNelderMead.jl/">GitHub repo</a></p>
+<p><a href="https://astrobc1.github.io/IterativeNelderMead.jl/dev/">Documentation and Examples</a></p>
+<h4 id="echelle_suite"><a href="#echelle_suite" class="header-anchor">Echelle suite</a></h4>
+<p>Process echelle spectra and generate precise radial velocities, with various levels of support for PARVI, iSHELL, CHIRON, MINERVA, MINERVA-Australis, HARPS, and ESPRESSO. GitHub Links:</p>
+<p><a href="https://github.com/astrobc1/EchelleBase.jl/">EchelleBase.jl</a></p>
+<p><a href="https://github.com/astrobc1/EchelleReduce.jl/">EchelleReduce.jl</a></p>
+<p><a href="https://github.com/astrobc1/EchelleSpectralModeling.jl/">EchelleSpectralModeling.jl</a></p>
+<p><a href="https://github.com/astrobc1/EchelleSpectrographs.jl/">EchelleSpectrographs.jl</a></p>
+
+<figure style="text-align:center;">
+<img src="../spec.png" style="padding:0; width:125%;" alt=" "/>
+<figcaption> </figcaption>
+</figure>
+
+<h3 id="julia_codes_ive_developed_for_fun"><a href="#julia_codes_ive_developed_for_fun" class="header-anchor">Julia Codes I&#39;ve developed for fun:</a></h3>
+<p>In my spare time, I enjoy coding up mathematical fractals in the complex plane. Here is the burning ship fractal, computed by iterating</p>
+\[ z_{n+1} = (|\mathrm{Re}(z_{n})| + i \ |\mathrm{Im}(z_{n})|)^2 + c \]
+<p>for each point c in the complex plane, starting from the origin.</p>
+
+<figure style="text-align:center;">
+<img src="../burningship.png" style="padding:0; width:100%;" alt=" "/>
+<figcaption> </figcaption>
+</figure>
+
+<div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> . Last modified: June 13, 2022.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+  </body>
+</html>
