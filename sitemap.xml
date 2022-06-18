@@ -2,13 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://astrobc1.github.io/404/index.html</loc>
-    <lastmod>2022-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://astrobc1.github.io/FindMe/index.html</loc>
+    <loc>https://astrobc1.github.io/Research/index.html</loc>
     <lastmod>2022-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -20,8 +14,14 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://astrobc1.github.io/Research/index.html</loc>
-    <lastmod>2022-06-13</lastmod>
+    <loc>https://astrobc1.github.io/404/index.html</loc>
+    <lastmod>2022-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://astrobc1.github.io/FindMe/index.html</loc>
+    <lastmod>2022-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
