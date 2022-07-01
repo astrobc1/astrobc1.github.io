@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/celeste.min.css">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/apple-touch-icon.png">
+
+   <title></title>  
+</head>
+<body>
+  <header>
+<nav class="nav-main">
+  <ul>
+    <li class="hvr-underline-reveal"><a href="/">Home</a></li>
+    <li class="hvr-underline-reveal"><a href="/Research/">Research</a></li>
+    <li class="hvr-underline-reveal"><a href="/Codes/">Codes</a></li>
+    <li class="hvr-underline-reveal"><a href="/FindMe/">@</a></li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- Content appended here -->
+<div class="franklin-content">
+<span style="font-weight:bold; margin-left: 0px; margin-right: 0px; font-size:18pt; max-width: 5000px;">Julia codes I've developed for research</span>
+
+
+<br/>
+<br/>
+<br/>
+
+
+<span style="font-size:20pt; font-weight: bold"> <a href="https://astrobc1.github.io/IterativeNelderMead.jl/dev/">IterativeNelderMead.jl</a> </span>
+
+
+<figure style="text-align:center;">
+<img src="../assets/simplex.gif" style="padding:0; display: block; margin-left: 5px; margin-right: auto; width: 80%;" alt=" "/>
+<figcaption> </figcaption>
+</figure>
+
+<p>An Nelder-Mead solver written in Julia. The solver is robust in high-dimensional parameter spaces.</p>
+<p><strong><a href="https://github.com/astrobc1/IterativeNelderMead.jl/">GitHub repo</a></strong></p>
+<p><strong><a href="https://astrobc1.github.io/IterativeNelderMead.jl/dev/">Documentation and Examples</a></strong></p>
+
+<br/>
+
+<hr />
+
+<span style="font-size:20pt; font-weight: bold"> <a href="https://github.com/astrobc1/Echelle.jl">Echelle.jl</a> </span>
+
+
+<br/>
+<br/>
+
+
+<img src="../assets/spec.png" style="text-align: center; display: block; margin-left: auto; margin-right: auto; width: 100%; padding: 0" alt=""/>
+
+<p>Process echelle spectra and generate precise radial velocities with:</p>
+<ul>
+<li><p><strong><a href="https://github.com/astrobc1/EchelleBase.jl">EchelleBase.jl</a></strong> - Provides base data types and mathematical functions that can apply to all echelle data.</p>
+</li>
+<li><p><strong><a href="https://github.com/astrobc1/EchelleReduce.jl">EchelleReduce.jl</a></strong> - Provides an interface to reduce &#40;calibrate and extract&#41; echelle spectra.</p>
+</li>
+<li><p><strong><a href="https://github.com/astrobc1/EchelleSpectralModeling.jl">EchelleSpectralModeling.jl</a></strong> - Provides an interface to model 1-dimensional echelle spectra with an emphasis on radial velocities.</p>
+</li>
+</ul>
+<p>Different levels of support are provided for:</p>
+<ul>
+<li><p><a href="http://irtfweb.ifa.hawaii.edu/~ishell/">iSHELL / IRTF</a></p>
+</li>
+<li><p><a href="http://irtfweb.ifa.hawaii.edu/~ishell/">PARVI / Hale</a></p>
+</li>
+<li><p><a href="https://www.eso.org/sci/facilities/lasilla/instruments/harps.html">HARPS-S / La Silla 3.6 m</a></p>
+</li>
+<li><p><a href="https://www.eso.org/sci/facilities/paranal/instruments/espresso.html">ESPRESSO / VLT</a></p>
+</li>
+<li><p><a href="http://exoplanets.astro.yale.edu/instrumentation/chiron.php">CHIRON / SMARTS 1.5 m</a></p>
+</li>
+<li><p><a href="https://www2.keck.hawaii.edu/inst/nirspec/">NIRSPEC / Keck</a></p>
+</li>
+<li><p><a href="https://lweb.cfa.harvard.edu/minerva/">MINERVA</a></p>
+</li>
+<li><p><a href="https://astrophysics.usq.edu.au/minerva-australis/">MINERVA-Australis</a></p>
+</li>
+</ul>
+<hr />
+
+<br/>
+
+
+<span style="font-weight:bold; margin-left: 0px; margin-right: 0px; font-size:18pt; max-width: 5000px;">Julia codes I've developed for fun</span>
+
+
+<br/>
+<br/>
+
+<p>In my spare time, I enjoy coding up mathematical fractals in the complex plane. Here is the burning ship fractal, computed by iterating</p>
+\[ z_{n+1} = (|\mathrm{Re}(z_{n})| + i \ |\mathrm{Im}(z_{n})|)^2 + c \]
+<p>for each point c in the complex plane, starting from the origin. Each pixel is colored according to it&#39;s &quot;escape velicity&quot; where brighter pixels escape to complex infinity after fewer iterations.</p>
+
+<br/>
+
+
+<img src="../assets/burningship.png" style="text-align: center; display: block; margin-left: auto; margin-right: auto; width: 100%; padding: 0" alt=""/>
+
+<div class="page-foot">
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/contrib/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+  </body>
+</html>
