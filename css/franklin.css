@@ -336,7 +336,8 @@ code {
 }
 
 body {
-  font-family: juliamono
+  font-family: juliamono;
+  background-color: #fefffa;
 }
 
 a {
