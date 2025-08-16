@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { BlockMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
 
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// Fixed imports for react-syntax-highlighter
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism'; // full Prism build
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function DevNotes() {
