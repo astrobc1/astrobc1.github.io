@@ -13,10 +13,30 @@ import { GiGalaxy } from "react-icons/gi";
 import { CgFileDocument } from "react-icons/cg";
 
 
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const location = useLocation();
+
+  // Map routes to page names
+  const routeNames = {
+    '/': 'Home',
+    '/projects': 'Projects',
+    '/notes': 'Dev Notes',
+    '/hobbies': 'Hobbies',
+  };
+
+  // Find the best match for the current path
+  function getCurrentPageName(pathname) {
+    if (pathname === '/') return routeNames['/'];
+    const match = Object.keys(routeNames).find((route) =>
+      route !== '/' && pathname.startsWith(route)
+    );
+    return match ? routeNames[match] : '';
+  }
+
+  const currentPageName = getCurrentPageName(location.pathname);
 
   const isActive = (path) => {
     if (path === "/" && location.pathname === "/") return true;
@@ -52,8 +72,38 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        {/* Show current page name on mobile, hide on desktop */}
+        {(!expand || expand === false) && (
+          <span
+            className="navbar-current-page d-md-none mx-auto"
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: 700,
+              color: '#fff',
+              fontFamily: 'Inter, sans-serif',
+              textAlign: 'center',
+              letterSpacing: '0.01em',
+              lineHeight: 1.2,
+              minWidth: 0,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              position: 'absolute',
+              left: '56px',
+              right: '16px',
+              marginLeft: 0,
+              marginRight: 0,
+              zIndex: 2,
+              pointerEvents: 'none',
+              maxWidth: 'calc(100vw - 72px)'
+            }}
+          >
+            {currentPageName}
+          </span>
+        )}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" defaultActiveKey="#home">
+            {/* ...existing code... */}
             <Nav.Item>
               <Nav.Link 
                 as={Link} 
