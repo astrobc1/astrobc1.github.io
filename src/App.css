@@ -1,0 +1,11 @@
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #010103;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

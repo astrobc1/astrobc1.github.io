@@ -1,0 +1,30 @@
+{
+  "download_date": "2025-08-09T19:18:00.792891",
+  "total_records": 5375,
+  "valid_records": 5375,
+  "unique_systems": 3985,
+  "data_source": "NASA Exoplanet Archive - Planetary Systems Composite Parameters",
+  "api_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+  "columns": [
+    "pl_name",
+    "hostname",
+    "sy_snum",
+    "sy_pnum",
+    "discoverymethod",
+    "disc_year",
+    "pl_orbper",
+    "pl_orbsmax",
+    "pl_rade",
+    "pl_radj",
+    "pl_masse",
+    "pl_massj",
+    "pl_eqt",
+    "st_rad",
+    "st_mass",
+    "st_teff",
+    "sy_dist",
+    "ra",
+    "dec",
+    "download_date"
+  ]
+}
